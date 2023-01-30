@@ -71,6 +71,7 @@ require('edenfox-feline')
 require('icons')
 require('gitsigns').setup()
 require('nightfox')
+require('nvim-treesitter')
 
 -- Fuzzy Finder Mappings
 vim.keymap.set('n', 'ff', '<cmd>Telescope find_files<cr>')
