@@ -8,5 +8,4 @@ require('icons')
 require('gitsigns').setup()
 require('nightfox')
 require('mappings')
-
-vim.cmd('colorscheme carbonfox') 
+require('set-theme')
