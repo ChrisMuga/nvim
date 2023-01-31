@@ -18,7 +18,6 @@ return require('packer').startup(function(use)
 	
 	-- Fuzzy finder
 	use('junegunn/fzf', { run = vim.fn['fzf#install']})
-	use 'junegunn/fzf.vim'
 
 	-- NerdTree
 	use 'preservim/nerdtree'
@@ -38,7 +37,6 @@ return require('packer').startup(function(use)
 	use 'feline-nvim/feline.nvim'
 
 	-- Git Diff
-	use 'nvim-lua/plenary.nvim'
 	use 'sindrets/diffview.nvim'
 
 	-- Git Blamer
