@@ -1,8 +1,7 @@
-
 -- Require Lua Modules
 require('settings')
 require('plugins')
-require('nvim-treesitter')
+require('nvim-treesitter-config')
 require('edenfox-feline')
 require('icons')
 require('gitsigns').setup()

@@ -1,46 +1,60 @@
-local Plug = vim.fn['plug#']
 -- Plugins
-vim.call('plug#begin')
+local ensure_packer = function()
+  local fn = vim.fn
+  local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+  if fn.empty(fn.glob(install_path)) > 0 then
+    fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+    vim.cmd [[packadd packer.nvim]]
+    return true
+  end
+  return false
+end
 
+local packer_bootstrap = ensure_packer()
+
+return require('packer').startup(function(use)
+	-- Packer can manage itself
+  	use 'wbthomason/packer.nvim'
+	
 	-- Fuzzy finder
-	Plug('junegunn/fzf', {['do'] = vim.fn['fzf#install']})
-	Plug 'junegunn/fzf.vim'
+	use('junegunn/fzf', { run = vim.fn['fzf#install']})
+	use 'junegunn/fzf.vim'
 
 	-- NerdTree
-	Plug 'preservim/nerdtree'
+	use 'preservim/nerdtree'
 
 	-- NerdTree plugins
-	Plug 'ryanoasis/vim-devicons'
-	Plug 'Xuyuanp/nerdtree-git-plugin'
+	use 'ryanoasis/vim-devicons'
+	use 'Xuyuanp/nerdtree-git-plugin'
 
 	-- Treesitter
-	Plug('nvim-treesitter/nvim-treesitter', {['do'] = ':TSUpdate'})
+	use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
 
 	-- Themes
 	-- https://github.com/EdenEast/nightfox.nvim
-	Plug 'EdenEast/nightfox.nvim' 
+	use 'EdenEast/nightfox.nvim' 
 
 	-- Status Line
-	Plug 'feline-nvim/feline.nvim'
+	use 'feline-nvim/feline.nvim'
 
 	-- Git Diff
-	Plug 'nvim-lua/plenary.nvim'
-	Plug 'sindrets/diffview.nvim'
+	use 'nvim-lua/plenary.nvim'
+	use 'sindrets/diffview.nvim'
 
 	-- Git Blamer
-	Plug 'APZelos/blamer.nvim'
+	use 'APZelos/blamer.nvim'
 
 	-- Neo Formatter
-	Plug 'sbdchd/neoformat'
+	use 'sbdchd/neoformat'
 
 	-- Icons
-	Plug 'nvim-tree/nvim-web-devicons'
-	Plug 'lewis6991/gitsigns.nvim'
+	use 'nvim-tree/nvim-web-devicons'
+	use 'lewis6991/gitsigns.nvim'
 
 	-- Fuzzy Finder (2)
-	Plug 'nvim-lua/plenary.nvim'
-	Plug('nvim-telescope/telescope.nvim', { ['tag'] = '0.1.1' })
+	use 'nvim-lua/plenary.nvim'
+	use 'nvim-telescope/telescope.nvim'
+end)
 
-vim.call('plug#end')
 
 
