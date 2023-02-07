@@ -8,4 +8,3 @@ vim.opt.autoindent = true
 vim.opt.showmatch = true
 vim.opt.termguicolors = true
 
-
