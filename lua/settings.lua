@@ -7,4 +7,5 @@ vim.opt.guifont = "DroidSansMono_Nerd_Font:h11"
 vim.opt.autoindent = true
 vim.opt.showmatch = true
 vim.opt.termguicolors = true
-
+vim.opt.splitbelow = true
+vim.opt.splitright = true
