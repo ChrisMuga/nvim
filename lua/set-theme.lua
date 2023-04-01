@@ -8,18 +8,13 @@ if min == 0 then
 end
 
 themes = {
-	
 
-		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'solarized', 
-		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'solarized', 
-		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'solarized', 
-		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'solarized', 
-		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'solarized', 
-		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'solarized', 
-		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'solarized', 
-		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'solarized', 
-		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'solarized', 
-		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'solarized', 
+		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'tokyonight-night', 'tokyonight-storm', 'tokyonight-day', 'tokyonight-moon', 
+		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'tokyonight-night', 'tokyonight-storm', 'tokyonight-day', 'tokyonight-moon', 
+		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'tokyonight-night', 'tokyonight-storm', 'tokyonight-day', 'tokyonight-moon', 
+		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'tokyonight-night', 'tokyonight-storm', 'tokyonight-day', 'tokyonight-moon', 
+		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'tokyonight-night', 'tokyonight-storm', 'tokyonight-day', 'tokyonight-moon', 
+		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'tokyonight-night', 'tokyonight-storm', 'tokyonight-day', 'tokyonight-moon', 
 
 	}
 
