@@ -32,6 +32,7 @@ return require('packer').startup(function(use)
 	-- Themes
 	-- https://github.com/EdenEast/nightfox.nvim
 	use 'EdenEast/nightfox.nvim' 
+	use 'shaunsingh/solarized.nvim'
 
 	-- Status Line
 	use 'feline-nvim/feline.nvim'
