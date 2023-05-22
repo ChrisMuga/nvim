@@ -55,7 +55,11 @@ return require('packer').startup(function(use)
 	use 'nvim-telescope/telescope.nvim'
 
 	-- Set Transparent Background
-	use 'xiyaowong/transparent.nvim'	
+	use 'xiyaowong/transparent.nvim'
+
+	-- Comments
+	use "terrortylor/nvim-comment"
+	require('nvim_comment').setup()
 end)
 
 
