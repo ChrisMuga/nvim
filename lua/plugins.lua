@@ -53,6 +53,7 @@ return require('packer').startup(function(use)
 	-- Fuzzy Finder (2)
 	use 'nvim-lua/plenary.nvim'
 	use 'nvim-telescope/telescope.nvim'
+	use 'nvim-pack/nvim-spectre'
 
 	-- Set Transparent Background
 	use 'xiyaowong/transparent.nvim'
