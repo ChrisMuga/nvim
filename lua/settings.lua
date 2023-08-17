@@ -9,3 +9,4 @@ vim.opt.showmatch = true
 vim.opt.termguicolors = true
 vim.opt.splitbelow = true
 vim.opt.splitright = true
+vim.wo.number = true
