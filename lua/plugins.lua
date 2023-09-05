@@ -61,6 +61,9 @@ return require('packer').startup(function(use)
 	-- Comments
 	use "terrortylor/nvim-comment"
 	require('nvim_comment').setup()
+
+	-- Catppuccin Theme
+	use { "catppuccin/nvim", as = "catppuccin" }
 end)
 
 

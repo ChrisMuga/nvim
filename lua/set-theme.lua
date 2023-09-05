@@ -9,12 +9,12 @@ end
 
 themes = {
 
-		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'tokyonight-night', 'tokyonight-storm', 'tokyonight-day', 'tokyonight-moon', 
-		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'tokyonight-night', 'tokyonight-storm', 'tokyonight-day', 'tokyonight-moon', 
-		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'tokyonight-night', 'tokyonight-storm', 'tokyonight-day', 'tokyonight-moon', 
-		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'tokyonight-night', 'tokyonight-storm', 'tokyonight-day', 'tokyonight-moon', 
-		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'tokyonight-night', 'tokyonight-storm', 'tokyonight-day', 'tokyonight-moon', 
-		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'tokyonight-night', 'tokyonight-storm', 'tokyonight-day', 'tokyonight-moon', 
+		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'tokyonight-night', 'tokyonight-storm', 'tokyonight-day', 'tokyonight-moon', 'catppuccin', 'catppuccin-frappe', 'catppuccin-latte', 'catpuccin-macchiato', 'catppuccin-mocha', 
+		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'tokyonight-night', 'tokyonight-storm', 'tokyonight-day', 'tokyonight-moon', 'catppuccin', 'catppuccin-frappe', 'catppuccin-latte', 'catpuccin-macchiato', 'catppuccin-mocha', 
+		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'tokyonight-night', 'tokyonight-storm', 'tokyonight-day', 'tokyonight-moon', 'catppuccin', 'catppuccin-frappe', 'catppuccin-latte', 'catpuccin-macchiato', 'catppuccin-mocha', 
+		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'tokyonight-night', 'tokyonight-storm', 'tokyonight-day', 'tokyonight-moon', 'catppuccin', 'catppuccin-frappe', 'catppuccin-latte', 'catpuccin-macchiato', 'catppuccin-mocha', 
+		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'tokyonight-night', 'tokyonight-storm', 'tokyonight-day', 'tokyonight-moon', 'catppuccin', 'catppuccin-frappe', 'catppuccin-latte', 'catpuccin-macchiato', 'catppuccin-mocha', 
+		'terafox', 'nightfox', 'dawnfox', 'carbonfox', 'duskfox', 'nordfox', 'tokyonight-night', 'tokyonight-storm', 'tokyonight-day', 'tokyonight-moon', 'catppuccin', 'catppuccin-frappe', 'catppuccin-latte', 'catpuccin-macchiato', 'catppuccin-mocha', 
 
 	}
 
