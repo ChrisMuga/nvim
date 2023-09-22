@@ -33,6 +33,10 @@ return require('packer').startup(function(use)
 	-- https://github.com/EdenEast/nightfox.nvim
 	use 'EdenEast/nightfox.nvim' 
 	use 'folke/tokyonight.nvim'
+	-- Catppuccin Theme
+	use { "catppuccin/nvim", as = "catppuccin" }
+	-- Solarized
+	use 'maxmx03/solarized.nvim'
 
 	-- Status Line
 	use 'feline-nvim/feline.nvim'
@@ -61,9 +65,6 @@ return require('packer').startup(function(use)
 	-- Comments
 	use "terrortylor/nvim-comment"
 	require('nvim_comment').setup()
-
-	-- Catppuccin Theme
-	use { "catppuccin/nvim", as = "catppuccin" }
 
 	use({
 	    "kylechui/nvim-surround",

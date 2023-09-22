@@ -17,5 +17,6 @@ vim.keymap.set('n', 'gs', '<cmd>Telescope grep_string<cr>') -- Grep String Under
 vim.keymap.set('n', 'fb', '<cmd>Telescope buffers<cr>') -- Find Open Files (in Buffer)
 vim.keymap.set('n', 'fc', '<cmd>Telescope oldfiles<cr>') -- Find Closed Files (in Buffer)
 vim.keymap.set('n', 'fh', '<cmd>Telescope help_tags<cr>')
+vim.keymap.set('n', 'ft', '<cmd>Telescope colorscheme<cr>')
 
 
