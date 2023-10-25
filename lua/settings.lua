@@ -10,3 +10,6 @@ vim.opt.termguicolors = true
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.wo.number = true
+
+vim.opt.shiftwidth=4
+vim.opt.tabstop = 4
