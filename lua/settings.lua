@@ -11,5 +11,6 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.wo.number = true
 
+-- Tab width options
 vim.opt.shiftwidth=4
 vim.opt.tabstop = 4
