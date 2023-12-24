@@ -14,3 +14,11 @@ vim.wo.number = true
 -- Tab width options
 vim.opt.shiftwidth=4
 vim.opt.tabstop = 4
+
+-- disable netrw at the very start of your init.lua
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- set termguicolors to enable highlight groups
+vim.opt.termguicolors = true
+

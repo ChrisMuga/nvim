@@ -19,9 +19,27 @@ return require('packer').startup(function(use)
 	-- Fuzzy finder
 	use('junegunn/fzf', { run = vim.fn['fzf#install']})
 
-	-- NerdTree
-	use 'preservim/nerdtree'
-
+	-- Nvim Tree
+	use {
+	  'nvim-tree/nvim-tree.lua',
+	  requires = {
+		'nvim-tree/nvim-web-devicons', -- optional
+	  },
+	}
+	require("nvim-tree").setup({
+    sort = {
+      sorter = "case_sensitive",
+    },
+    view = {
+      width = 30,
+    },
+    renderer = {
+      group_empty = true,
+    },
+    filters = {
+      dotfiles = true,
+    },
+  })
 	-- NerdTree plugins
 	use 'ryanoasis/vim-devicons'
 	use 'Xuyuanp/nerdtree-git-plugin'
@@ -77,10 +95,5 @@ return require('packer').startup(function(use)
 	})
 
 	-- Markdown Previews
-	use({
-	    "iamcco/markdown-preview.nvim",
-	    run = function() vim.fn["mkdp#util#install"]() end,
-	})
-
 	use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 end)
