@@ -75,6 +75,13 @@ return require('packer').startup(function(use)
 	-- Fuzzy Finder (2)
 	use 'nvim-lua/plenary.nvim'
 	use 'nvim-telescope/telescope.nvim'
+	require "telescope".setup {
+	  pickers = {
+		colorscheme = {
+		  enable_preview = true
+		}
+	  }
+	}
 	use 'nvim-pack/nvim-spectre'
 
 	-- Set Transparent Background
@@ -99,4 +106,12 @@ return require('packer').startup(function(use)
 
 	-- Floating Terminal
 	use 'voldikss/vim-floaterm'
+	-- Everforest theme
+	use({
+	  "neanias/everforest-nvim",
+	  -- Optional; default configuration will be used if setup isn't called.
+	  config = function()
+		require("everforest").setup()
+	  end,
+	})
 end)
