@@ -5,8 +5,7 @@
 -- nmap fw :Ag<CR>
 
 -- Nerd Tree
-vim.keymap.set('n','<C-t>', '<cmd>NvimTreeToggle<cr>')
-vim.keymap.set('n', '<C-f>', '<cmd>NvimTreeFind<cr>')
+vim.keymap.set('n','<C-t>', '<cmd>NERDTreeToggle<cr>')
 
 -- Fuzzy Finder Mappings
 vim.keymap.set('n', 'ff', '<cmd>Telescope find_files<cr>') -- Find Files

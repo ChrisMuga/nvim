@@ -19,31 +19,6 @@ return require('packer').startup(function(use)
 	-- Fuzzy finder
 	use('junegunn/fzf', { run = vim.fn['fzf#install']})
 
-	-- Nvim Tree
-	use {
-	  'nvim-tree/nvim-tree.lua',
-	  requires = {
-		'nvim-tree/nvim-web-devicons', -- optional
-	  },
-	}
-	require("nvim-tree").setup({
-    sort = {
-      sorter = "case_sensitive",
-    },
-    view = {
-      width = 30,
-    },
-    renderer = {
-      group_empty = true,
-    },
-    filters = {
-      dotfiles = true,
-    },
-  })
-	-- NerdTree plugins
-	use 'ryanoasis/vim-devicons'
-	use 'Xuyuanp/nerdtree-git-plugin'
-
 	-- Treesitter
 	use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
 
@@ -83,6 +58,9 @@ return require('packer').startup(function(use)
 	  }
 	}
 	use 'nvim-pack/nvim-spectre'
+	
+	-- NerdTree
+	use 'preservim/nerdtree'
 
 	-- Set Transparent Background
 	use 'xiyaowong/transparent.nvim'

@@ -89,6 +89,12 @@ _G.packer_plugins = {
     path = "/Users/muga/.local/share/nvim/site/pack/packer/start/diffview.nvim",
     url = "https://github.com/sindrets/diffview.nvim"
   },
+  ["everforest-nvim"] = {
+    config = { "\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15everforest\frequire\0" },
+    loaded = true,
+    path = "/Users/muga/.local/share/nvim/site/pack/packer/start/everforest-nvim",
+    url = "https://github.com/neanias/everforest-nvim"
+  },
   ["feline.nvim"] = {
     loaded = true,
     path = "/Users/muga/.local/share/nvim/site/pack/packer/start/feline.nvim",
@@ -116,10 +122,10 @@ _G.packer_plugins = {
     path = "/Users/muga/.local/share/nvim/site/pack/packer/start/neoformat",
     url = "https://github.com/sbdchd/neoformat"
   },
-  ["nerdtree-git-plugin"] = {
+  nerdtree = {
     loaded = true,
-    path = "/Users/muga/.local/share/nvim/site/pack/packer/start/nerdtree-git-plugin",
-    url = "https://github.com/Xuyuanp/nerdtree-git-plugin"
+    path = "/Users/muga/.local/share/nvim/site/pack/packer/start/nerdtree",
+    url = "https://github.com/preservim/nerdtree"
   },
   ["nightfox.nvim"] = {
     loaded = true,
@@ -141,11 +147,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/muga/.local/share/nvim/site/pack/packer/start/nvim-surround",
     url = "https://github.com/kylechui/nvim-surround"
-  },
-  ["nvim-tree.lua"] = {
-    loaded = true,
-    path = "/Users/muga/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
-    url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -187,11 +188,6 @@ _G.packer_plugins = {
     path = "/Users/muga/.local/share/nvim/site/pack/packer/start/transparent.nvim",
     url = "https://github.com/xiyaowong/transparent.nvim"
   },
-  ["vim-devicons"] = {
-    loaded = true,
-    path = "/Users/muga/.local/share/nvim/site/pack/packer/start/vim-devicons",
-    url = "https://github.com/ryanoasis/vim-devicons"
-  },
   ["vim-floaterm"] = {
     loaded = true,
     path = "/Users/muga/.local/share/nvim/site/pack/packer/start/vim-floaterm",
@@ -204,6 +200,10 @@ time([[Defining packer_plugins]], false)
 time([[Setup for markdown-preview.nvim]], true)
 try_loadstring("\27LJ\2\n=\0\0\2\0\4\0\0056\0\0\0009\0\1\0005\1\3\0=\1\2\0K\0\1\0\1\2\0\0\rmarkdown\19mkdp_filetypes\6g\bvim\0", "setup", "markdown-preview.nvim")
 time([[Setup for markdown-preview.nvim]], false)
+-- Config for: everforest-nvim
+time([[Config for everforest-nvim]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15everforest\frequire\0", "config", "everforest-nvim")
+time([[Config for everforest-nvim]], false)
 -- Config for: nvim-surround
 time([[Config for nvim-surround]], true)
 try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
