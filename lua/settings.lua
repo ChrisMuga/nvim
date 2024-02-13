@@ -19,4 +19,4 @@ vim.opt.tabstop = 4
 vim.opt.termguicolors = true
 
 -- Colorscheme
-vim.cmd [[colorscheme delek]]
+vim.cmd [[colorscheme everforest]]
