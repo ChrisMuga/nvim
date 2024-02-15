@@ -7,3 +7,7 @@ require('gitsigns').setup()
 require('nightfox')
 require('mappings')
 require('nvim-treesitter-config')
+
+require("toggleterm").setup{
+	direction='float'
+}
