@@ -96,4 +96,17 @@ return require('packer').startup(function(use)
 		require("everforest").setup()
 	  end,
 	})
+
+	-- Sort
+	use({
+	  'sQVe/sort.nvim',
+
+	  -- Optional setup for overriding defaults.
+	  config = function()
+		require("sort").setup({
+		  -- Input configuration here.
+		  -- Refer to the configuration section below for options.
+		})
+	  end
+	})
 end)
