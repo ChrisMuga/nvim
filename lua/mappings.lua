@@ -15,6 +15,7 @@ vim.keymap.set('n', 'fb', '<cmd>Telescope buffers<cr>') -- Find Open Files (in B
 vim.keymap.set('n', 'fc', '<cmd>Telescope oldfiles<cr>') -- Find Closed Files (in Buffer)
 vim.keymap.set('n', 'fh', '<cmd>Telescope help_tags<cr>')
 vim.keymap.set('n', 'ft', '<cmd>Telescope colorscheme<cr>')
+vim.keymap.set('n', 'fg', '<cmd>Telescope git_status<cr>')
 
 -- Background Settings
 vim.keymap.set('n', 'bd', '<cmd>set bg=dark<cr>')
