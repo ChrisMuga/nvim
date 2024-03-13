@@ -20,3 +20,5 @@ vim.opt.termguicolors = true
 
 -- Colorscheme
 vim.cmd [[colorscheme everforest]]
+
+require('lsp')
