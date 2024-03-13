@@ -1,3 +1,4 @@
+print("Christ is King")
 -- Require Lua Modules
 require('settings')
 require('plugins')
