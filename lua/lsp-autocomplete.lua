@@ -1,6 +1,8 @@
 local cmp = require('cmp')
 local cmp_format = require('lsp-zero').cmp_format({details = true})
 
+-- https://github.com/neovim/nvim-lspconfig/wiki/Autocompletion
+
 cmp.setup({
   sources = {
 	-- uncomment this for full autocomplete
@@ -19,7 +21,11 @@ cmp.setup({
         cmp.complete()
       end
     end),
-    ['<Tab>'] = cmp.mapping(function()
+	['<Enter>'] = cmp.mapping.confirm {
+      behavior = cmp.ConfirmBehavior.Replace,
+      select = true,
+    },
+    ['<C-n>'] = cmp.mapping(function()
       if cmp.visible() then
         cmp.select_next_item({behavior = 'insert'})
       else
