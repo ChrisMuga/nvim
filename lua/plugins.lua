@@ -110,6 +110,8 @@ return require('packer').startup(function(use)
 	  end
 	})
 
+	use({'mg979/vim-visual-multi'})
+
 	-- LSP
 	use {
   'VonHeikemen/lsp-zero.nvim',
