@@ -6,6 +6,7 @@
 
 -- Nerd Tree
 vim.keymap.set('n','<C-t>', '<cmd>NERDTreeToggle<cr>')
+vim.keymap.set('n','<C-f>', '<cmd>NERDTreeFind<cr>')
 
 -- Fuzzy Finder Mappings
 vim.keymap.set('n', 'ff', '<cmd>Telescope find_files<cr>') -- Find Files
