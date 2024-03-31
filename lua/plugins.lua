@@ -112,13 +112,22 @@ return require('packer').startup(function(use)
 
 	use({'mg979/vim-visual-multi'})
 
+
 	-- LSP
+    use(
+		{
+			'williamboman/mason.nvim',
+			config = function()
+				require("mason").setup()
+			end
+	})
+
 	use {
   'VonHeikemen/lsp-zero.nvim',
   branch = 'v3.x',
   requires = {
     --- Uncomment the two plugins below if you want to manage the language servers from neovim
-    -- {'williamboman/mason.nvim'},
+    {'williamboman/mason.nvim'},
     -- {'williamboman/mason-lspconfig.nvim'},
 
     -- LSP Support
