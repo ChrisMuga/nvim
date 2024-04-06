@@ -1,0 +1,143 @@
+vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
+vim.g.maplocalleader = " " -- Same for `maplocalleader`
+plugins = {
+	-- Fuzzy finder
+	{
+		'junegunn/fzf',
+		build=vim.fn['fzf#install']
+	},
+
+	-- Treesitter
+	{
+		'nvim-treesitter/nvim-treesitter'
+	},
+
+	-- Themes
+	-- https://github.com/EdenEast/nightfox.nvim
+	'EdenEast/nightfox.nvim',
+	'folke/tokyonight.nvim',
+	-- Catppuccin Theme
+	{ "catppuccin/nvim", name="catppuccin" },
+	-- Solarized
+	'maxmx03/solarized.nvim',
+	-- Status Line
+	'feline-nvim/feline.nvim',
+	-- Git Diff
+	'sindrets/diffview.nvim',
+	-- Git Blamer
+	'APZelos/blamer.nvim',
+	-- Neo Formatter
+	'sbdchd/neoformat',
+	-- Icons
+	'nvim-tree/nvim-web-devicons',
+	'lewis6991/gitsigns.nvim',
+	-- Fuzzy Finder (2)
+	'nvim-lua/plenary.nvim',
+	{'nvim-telescope/telescope.nvim', config=function()
+		require "telescope".setup {
+		  pickers = {
+			colorscheme = {
+			  enable_preview = true
+			}
+		  }
+	  }
+	  end,
+	  keys = function()
+		  return {'ff', '<cmd>Telescope find_files<cr>'}
+	  end
+	},
+	'nvim-pack/nvim-spectre',
+	-- NerdTree
+	'preservim/nerdtree',
+	-- Set Transparent Background
+	'xiyaowong/transparent.nvim',
+	-- Comments
+	{ 
+		"terrortylor/nvim-comment",
+		config = function()
+			require('nvim_comment').setup()
+		end,
+		dependencies={
+			{
+				"kylechui/nvim-surround",
+				config = function()
+					require("nvim-surround").setup({})
+				end
+			}
+		}
+	},
+	-- Markdown Previews
+	-- use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+
+	-- Floating Terminal
+	{
+		"akinsho/toggleterm.nvim", 
+		config = function()
+		  require("toggleterm").setup({
+				direction="float"
+		  })
+		end
+	},
+	-- Everforest theme
+	{
+	  "neanias/everforest-nvim",
+	  -- Optional; default configuration will be used if setup isn't called.
+	  config = function()
+		require("everforest").setup()
+	  end,
+	},
+
+	-- Sort
+	{
+	  'sQVe/sort.nvim',
+
+	  -- Optional setup for overriding defaults.
+	  config = function()
+		require("sort").setup({
+		  -- Input configuration here.
+		  -- Refer to the configuration section below for options.
+		})
+	  end
+	},
+	'mg979/vim-visual-multi',
+	-- LSP
+	{
+			'williamboman/mason.nvim',
+			config = function()
+				require("mason").setup()
+			end
+	},
+
+{
+  'VonHeikemen/lsp-zero.nvim',
+  branch = 'v3.x',
+  dependencies = {
+    --- Uncomment the two plugins below if you want to manage the language servers from neovim
+    {'williamboman/mason.nvim'},
+    -- {'williamboman/mason-lspconfig.nvim'},
+
+    -- LSP Support
+    {'neovim/nvim-lspconfig'},
+    -- Autocompletion
+    {'hrsh7th/nvim-cmp'},
+    {'hrsh7th/cmp-nvim-lsp'},
+	{'hrsh7th/cmp-buffer'},
+    {'L3MON4D3/LuaSnip'},
+  }
+
+}
+}
+
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not (vim.uv or vim.loop).fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
+end
+vim.opt.rtp:prepend(lazypath)
+require("lazy").setup(plugins, opts)
