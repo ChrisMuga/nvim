@@ -85,7 +85,7 @@ return require('packer').startup(function(use)
 	-- Floating Terminal
 	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
 	  require("toggleterm").setup({
-			direction="float"
+	  			direction="float"
 	  })
 	end}
 	-- Everforest theme

@@ -42,9 +42,9 @@ plugins = {
 		  }
 	  }
 	  end,
-	  keys = function()
-		  return {'ff', '<cmd>Telescope find_files<cr>'}
-	  end
+	  keys = {
+		  {'<leader>ff', '<cmd>Telescope find_files<cr>'}
+	  }
 	},
 	'nvim-pack/nvim-spectre',
 	-- NerdTree
@@ -52,7 +52,7 @@ plugins = {
 	-- Set Transparent Background
 	'xiyaowong/transparent.nvim',
 	-- Comments
-	{ 
+	{
 		"terrortylor/nvim-comment",
 		config = function()
 			require('nvim_comment').setup()

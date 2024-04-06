@@ -21,4 +21,7 @@ vim.opt.termguicolors = true
 -- Colorscheme
 vim.cmd [[colorscheme everforest]]
 
+vim.g.mapleader = ' '
+vim.g.maplocalleader = "\\"
+
 require('lsp')
