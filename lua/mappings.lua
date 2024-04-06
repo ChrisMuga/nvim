@@ -1,10 +1,6 @@
 -- Mappings
 
-Map FZF Commands to Keyboard shortcuts
-nmap ff :Files<CR>
-nmap fw :Ag<CR>
-
-Nerd Tree
+-- Nerd Tree
 vim.keymap.set('n','<C-t>', '<cmd>NERDTreeToggle<cr>')
 vim.keymap.set('n','<C-f>', '<cmd>NERDTreeFind<cr>')
 

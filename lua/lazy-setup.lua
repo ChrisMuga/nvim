@@ -33,29 +33,37 @@ plugins = {
 	'lewis6991/gitsigns.nvim',
 	-- Fuzzy Finder (2)
 	'nvim-lua/plenary.nvim',
-	{'nvim-telescope/telescope.nvim', config=function()
-		require "telescope".setup {
-		  pickers = {
-			colorscheme = {
-			  enable_preview = true
-			}
+	{'nvim-telescope/telescope.nvim',
+		config=function()
+			require "telescope".setup {
+			  pickers = {
+				colorscheme = {
+				  enable_preview = true
+				}
+			  }
 		  }
-	  }
-	  end,
-	  keys = {
-			{'<leader>ff', '<cmd>Telescope find_files<cr>'}, -- Find file
-			{'<leader>fs', '<cmd>Telescope live_grep<cr>'}, -- Find String
-			{'<leader>gs', '<cmd>Telescope grep_string<cr>'},-- Grep String Under Cursor
-			{'<leader>fb', '<cmd>Telescope buffers<cr>'},-- Find Open Files (in Buffer)
-			{'<leader>fc', '<cmd>Telescope oldfiles<cr>'},-- Find Closed Files (in Buffer)
-			{'<leader>fh', '<cmd>Telescope help_tags<cr>'},  
-			{'<leader>ft', '<cmd>Telescope colorscheme<cr>'},  
-			{'<leader>fg', '<cmd>Telescope git_status<cr>'},  
-	  }
+		  end,
+		  keys = {
+				{'<leader>ff', '<cmd>Telescope find_files<cr>'}, -- Find file
+				{'<leader>fs', '<cmd>Telescope live_grep<cr>'}, -- Find String
+				{'<leader>gs', '<cmd>Telescope grep_string<cr>'},-- Grep String Under Cursor
+				{'<leader>fb', '<cmd>Telescope buffers<cr>'},-- Find Open Files (in Buffer)
+				{'<leader>fc', '<cmd>Telescope oldfiles<cr>'},-- Find Closed Files (in Buffer)
+				{'<leader>fh', '<cmd>Telescope help_tags<cr>'},  
+				{'<leader>ft', '<cmd>Telescope colorscheme<cr>'},  
+				{'<leader>fg', '<cmd>Telescope git_status<cr>'},  
+		  }
 	},
 	'nvim-pack/nvim-spectre',
-	-- NerdTree
-	'preservim/nerdtree',
+	{
+		  'stevearc/oil.nvim',
+		  opts = {},
+		  -- Optional dependencies
+		  dependencies = { "nvim-tree/nvim-web-devicons" },
+		  config = function()
+			require("oil").setup()
+		  end
+		},
 	-- Set Transparent Background
 	'xiyaowong/transparent.nvim',
 	-- Comments
@@ -72,18 +80,6 @@ plugins = {
 				end
 			}
 		}
-	},
-	-- Markdown Previews
-	-- use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
-
-	-- Floating Terminal
-	{
-		"akinsho/toggleterm.nvim", 
-		-- config = function()
-		--   require("toggleterm").setup({
-		-- 		direction="float"
-		--   })
-		-- end
 	},
 	-- Everforest theme
 	{
