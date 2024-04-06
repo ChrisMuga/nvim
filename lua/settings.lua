@@ -19,7 +19,7 @@ vim.opt.tabstop = 4
 vim.opt.termguicolors = true
 
 -- Colorscheme
-vim.cmd [[colorscheme everforest]]
+vim.cmd [[colorscheme nightfox]]
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = "\\"
