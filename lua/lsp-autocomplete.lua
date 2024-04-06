@@ -6,7 +6,7 @@ local cmp_format = require('lsp-zero').cmp_format({details = true})
 cmp.setup({
   sources = {
 	-- uncomment this for full autocomplete
-    -- {name = 'nvim_lsp'},
+    {name = 'nvim_lsp'},
     {name = 'buffer'},
   },
   mapping = {
