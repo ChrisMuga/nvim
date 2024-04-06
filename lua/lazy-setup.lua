@@ -49,21 +49,26 @@ plugins = {
 				{'<leader>gs', '<cmd>Telescope grep_string<cr>'},-- Grep String Under Cursor
 				{'<leader>fb', '<cmd>Telescope buffers<cr>'},-- Find Open Files (in Buffer)
 				{'<leader>fc', '<cmd>Telescope oldfiles<cr>'},-- Find Closed Files (in Buffer)
-				{'<leader>fh', '<cmd>Telescope help_tags<cr>'},  
-				{'<leader>ft', '<cmd>Telescope colorscheme<cr>'},  
-				{'<leader>fg', '<cmd>Telescope git_status<cr>'},  
+				{'<leader>fh', '<cmd>Telescope help_tags<cr>'},
+				{'<leader>ft', '<cmd>Telescope colorscheme<cr>'},
+				{'<leader>fg', '<cmd>Telescope git_status<cr>'},
 		  }
 	},
 	'nvim-pack/nvim-spectre',
 	{
-		  'stevearc/oil.nvim',
-		  opts = {},
-		  -- Optional dependencies
-		  dependencies = { "nvim-tree/nvim-web-devicons" },
-		  config = function()
-			require("oil").setup()
-		  end
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+		dependencies = {
+		  "nvim-lua/plenary.nvim",
+		  "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+		  "MunifTanjim/nui.nvim",
+		  -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
 		},
+		keys = {
+				{ '<C-t>', '<cmd>Neotree toggle<cr>' },
+				{ '<C-f>', '<cmd>Neotree reveal<cr>' }
+			}
+	},
 	-- Set Transparent Background
 	'xiyaowong/transparent.nvim',
 	-- Comments
