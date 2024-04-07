@@ -67,7 +67,8 @@ plugins = {
 		keys = {
 				{ '<C-t>', '<cmd>Neotree toggle<cr>' },
 				{ '<C-f>', '<cmd>Neotree reveal<cr>' }
-			}
+			},
+		lazy=false
 	},
 	-- Set Transparent Background
 	'xiyaowong/transparent.nvim',

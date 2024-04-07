@@ -21,6 +21,9 @@ vim.opt.termguicolors = true
 -- Colorscheme
 vim.cmd [[colorscheme nightfox]]
 
+-- Attach file explorer
+vim.cmd [[Neotree toggle]]
+
 vim.g.mapleader = ' '
 vim.g.maplocalleader = "\\"
 
