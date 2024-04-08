@@ -65,9 +65,9 @@ plugins = {
 		  -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
 		},
 		keys = {
-				{ '<C-t>', '<cmd>Neotree toggle<cr>' },
-				{ '<C-f>', '<cmd>Neotree reveal<cr>' }
-			},
+			{ '<C-t>', '<cmd>Neotree toggle<cr>' },
+			{ '<C-f>', '<cmd>Neotree reveal<cr>' }
+		},
 		lazy=false
 	},
 	-- Set Transparent Background
@@ -116,25 +116,23 @@ plugins = {
 				require("mason").setup()
 			end
 	},
+	{
+	  'VonHeikemen/lsp-zero.nvim',
+	  branch = 'v3.x',
+	  dependencies = {
+		--- Uncomment the two plugins below if you want to manage the language servers from neovim
+		{'williamboman/mason.nvim'},
+		-- {'williamboman/mason-lspconfig.nvim'},
 
-{
-  'VonHeikemen/lsp-zero.nvim',
-  branch = 'v3.x',
-  dependencies = {
-    --- Uncomment the two plugins below if you want to manage the language servers from neovim
-    {'williamboman/mason.nvim'},
-    -- {'williamboman/mason-lspconfig.nvim'},
-
-    -- LSP Support
-    {'neovim/nvim-lspconfig'},
-    -- Autocompletion
-    {'hrsh7th/nvim-cmp'},
-    {'hrsh7th/cmp-nvim-lsp'},
-	{'hrsh7th/cmp-buffer'},
-    {'L3MON4D3/LuaSnip'},
-  }
-
-}
+		-- LSP Support
+		{'neovim/nvim-lspconfig'},
+		-- Autocompletion
+		{'hrsh7th/nvim-cmp'},
+		{'hrsh7th/cmp-nvim-lsp'},
+		{'hrsh7th/cmp-buffer'},
+		{'L3MON4D3/LuaSnip'},
+	  }
+	}
 }
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -149,4 +147,5 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   })
 end
 vim.opt.rtp:prepend(lazypath)
+local opts = {}
 require("lazy").setup(plugins, opts)
