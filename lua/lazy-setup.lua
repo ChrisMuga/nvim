@@ -45,6 +45,7 @@ plugins = {
 		  end,
 		  keys = {
 				{'<leader><leader>', '<cmd>Telescope find_files<cr>'}, -- Find file
+				{'ff', '<cmd>Telescope find_files<cr>'}, -- Find file
 				{'fs', '<cmd>Telescope live_grep<cr>'}, -- Find String
 				{'gs', '<cmd>Telescope grep_string<cr>'},-- Grep String Under Cursor
 				{'fb', '<cmd>Telescope buffers<cr>'},-- Find Open Files (in Buffer)
