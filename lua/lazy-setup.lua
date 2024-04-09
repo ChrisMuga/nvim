@@ -25,7 +25,12 @@ plugins = {
 	-- Git Diff
 	'sindrets/diffview.nvim',
 	-- Git Blamer
-	'APZelos/blamer.nvim',
+	{
+		'APZelos/blamer.nvim',
+		keys = {
+			{ '<leader>b', '<cmd>BlamerToggle<cr>' },
+		},
+	},
 	-- Neo Formatter
 	'sbdchd/neoformat',
 	-- Icons
