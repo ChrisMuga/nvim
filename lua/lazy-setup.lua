@@ -138,6 +138,24 @@ plugins = {
 		{'hrsh7th/cmp-buffer'},
 		{'L3MON4D3/LuaSnip'},
 	  }
+	},
+	{
+	 "folke/trouble.nvim",
+	 dependencies = { "nvim-tree/nvim-web-devicons" },
+	 opts = {
+	  -- your configuration comes here
+	  -- or leave it empty to use the default settings
+	  -- refer to the configuration section below
+	 },
+	},
+	{
+	  "j-hui/fidget.nvim",
+	  opts = {
+		-- options
+	  },
+	  config= function ()
+		  require("fidget").setup({})
+	  end
 	}
 }
 
