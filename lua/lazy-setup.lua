@@ -196,7 +196,10 @@ plugins = {
 		-- Only one of these is needed, not both.
 		"nvim-telescope/telescope.nvim", -- optional
 	  },
-	  config = true
+	  config = true,
+	  keys = {
+			{ '<leader>g', '<cmd>Neogit<cr>' },
+	  },
 	}
 }
 
