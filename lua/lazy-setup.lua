@@ -25,7 +25,10 @@ plugins = {
 		},
 	},
 	-- Neo Formatter
-	'sbdchd/neoformat',
+	{
+		'sbdchd/neoformat',
+		keys = { 'nf', '<cmd>Neoformat<cr>' }
+	},
 	-- Icons
 	'nvim-tree/nvim-web-devicons',
 	'lewis6991/gitsigns.nvim',
