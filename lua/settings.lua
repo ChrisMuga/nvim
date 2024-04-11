@@ -26,7 +26,7 @@ vim.cmd [[colorscheme nightfox]]
 -- vim.cmd [[Alpha]]
 
 -- Attach file explorer
-vim.cmd [[Neotree toggle]]
+vim.cmd [[Neotree show]]
 
 
 vim.g.mapleader = ' '
