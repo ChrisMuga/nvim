@@ -32,4 +32,7 @@ vim.cmd [[Neotree show]]
 vim.g.mapleader = ' '
 vim.g.maplocalleader = "\\"
 
+-- Keymaps
+vim.keymap.set("n", "nf", '<cmd>Neoformat<cr>')
+
 require('lsp')
