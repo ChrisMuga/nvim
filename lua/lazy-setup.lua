@@ -217,6 +217,14 @@ plugins = {
 	  keys = {
 			{ '<leader>w', '<cmd>Whichkey<cr>' },
 	  },
+	},
+	{
+		'akinsho/toggleterm.nvim',
+		 version = "*",
+		 config = true,
+		 keys = {
+			{'tt', '<cmd>:ToggleTerm direction=float name=Terminal<cr>'}
+		 }
 	}
 }
 
