@@ -225,7 +225,12 @@ plugins = {
 		 keys = {
 			{'tt', '<cmd>:ToggleTerm direction=float name=Terminal<cr>'}
 		 }
-	}
+	},
+	{
+        "lukas-reineke/headlines.nvim",
+        dependencies = "nvim-treesitter/nvim-treesitter",
+        config = true, -- or `opts = {}`
+    }
 }
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
