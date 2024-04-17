@@ -260,6 +260,12 @@ plugins = {
 	"lukas-reineke/headlines.nvim",
 	dependencies = "nvim-treesitter/nvim-treesitter",
 	config = true, -- or `opts = {}`
+},
+{
+	'brenoprata10/nvim-highlight-colors',
+	config=function ()
+		require('nvim-highlight-colors').setup({})
+	end
 }
 }
 
