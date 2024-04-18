@@ -19,7 +19,8 @@ vim.opt.tabstop = 4
 vim.opt.termguicolors = true
 
 -- Colorscheme
-vim.cmd [[colorscheme nightfox]]
+-- vim.cmd [[colorscheme nightfox]]
+vim.cmd [[colorscheme material-oceanic]]
 
 
 -- Alpha, Greeter
