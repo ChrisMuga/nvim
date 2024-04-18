@@ -8,7 +8,7 @@ vim.opt.termguicolors = true
 
 require('lazy-setup')
 require('settings')
-require('edenfox-feline')
+-- require('edenfox-feline')
 require('icons')
 require('gitsigns').setup()
 require('nightfox')

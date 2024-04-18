@@ -1,6 +1,6 @@
 vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
 vim.g.maplocalleader = " " -- Same for `maplocalleader`
-plugins = {
+local plugins = {
 	-- Treesitter
 	{
 		'nvim-treesitter/nvim-treesitter'
@@ -14,7 +14,13 @@ plugins = {
 	-- Solarized
 	'maxmx03/solarized.nvim',
 	-- Status Line
-	'feline-nvim/feline.nvim',
+	{
+		'nvim-lualine/lualine.nvim',
+		dependencies = { 'nvim-tree/nvim-web-devicons' },
+		config = function ()
+			require('lualine').setup()
+		end
+	},
 	-- Git Diff
 	'sindrets/diffview.nvim',
 	-- Git Blamer
@@ -91,13 +97,36 @@ plugins = {
 		"nvim-lua/plenary.nvim",
 		"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
 		"MunifTanjim/nui.nvim",
-		-- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
+		"3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
 	},
 	keys = {
 		{ '<C-t>', '<cmd>Neotree toggle<cr>' },
 		{ '<C-f>', '<cmd>Neotree reveal<cr>' }
 	},
-	lazy=false
+	lazy=false,
+	use_libuv_file_watcher=true,
+	config=function ()
+		require("neo-tree").setup({
+			default_component_configs = {
+				git_status = {
+					symbols = {
+						-- Change type
+						added     = "✚", -- NOTE: you can set any of these to an empty string to not show them
+						deleted   = "✖",
+						modified  = "",
+						renamed   = "",
+						-- Status type
+						untracked = "",
+						ignored   = "",
+						unstaged  = "",
+						staged    = "",
+						conflict  = "",
+					},
+					align = "right",
+				},
+			},
+		})
+	end
 },
 -- Set Transparent Background
 'xiyaowong/transparent.nvim',
