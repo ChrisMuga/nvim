@@ -9,6 +9,7 @@ local plugins = {
 	-- https://github.com/EdenEast/nightfox.nvim
 	'EdenEast/nightfox.nvim',
 	'folke/tokyonight.nvim',
+	{ "rose-pine/neovim", name = "rose-pine" },
 	-- Catppuccin Theme
 	{ "catppuccin/nvim", name="catppuccin" },
 	-- Solarized
