@@ -18,9 +18,10 @@ vim.opt.tabstop = 4
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
 
--- Colorscheme
+-- Startup Colorscheme
 -- vim.cmd [[colorscheme nightfox]]
-vim.cmd [[colorscheme material-oceanic]]
+-- vim.cmd [[colorscheme material-oceanic]]
+vim.cmd [[colorscheme material-deep-ocean]]
 
 
 -- Alpha, Greeter
