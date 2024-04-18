@@ -13,6 +13,7 @@ local plugins = {
 	{ "catppuccin/nvim", name="catppuccin" },
 	-- Solarized
 	'maxmx03/solarized.nvim',
+	'marko-cerovac/material.nvim',
 	-- Status Line
 	{
 		'nvim-lualine/lualine.nvim',
