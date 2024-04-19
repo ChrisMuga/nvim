@@ -1,7 +1,7 @@
 -- Settings
 
 -- Autochange the directory
--- vim.opt.autochdir
+vim.opt.autochdir = true
 vim.opt.encoding = "UTF-8"
 vim.opt.guifont = "DroidSansMono_Nerd_Font:h11"
 vim.opt.autoindent = true
@@ -15,21 +15,13 @@ vim.wo.number = true
 vim.opt.shiftwidth=4
 vim.opt.tabstop = 4
 
--- set termguicolors to enable highlight groups
-vim.opt.termguicolors = true
-
 -- Startup Colorscheme
 -- vim.cmd [[colorscheme nightfox]]
 -- vim.cmd [[colorscheme material-oceanic]]
 vim.cmd [[colorscheme material-deep-ocean]]
 
-
--- Alpha, Greeter
--- vim.cmd [[Alpha]]
-
 -- Attach file explorer
-vim.cmd [[Neotree show]]
-
+-- vim.cmd [[Neotree show]]
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = "\\"
