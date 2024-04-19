@@ -109,6 +109,25 @@ local plugins = {
 	use_libuv_file_watcher=true,
 	config=function ()
 		require("neo-tree").setup({
+			close_if_last_window=true,
+			event_handlers = {
+				{
+					event = "neo_tree_window_after_open",
+					handler = function(args)
+						if args.position == "left" or args.position == "right" then
+							vim.cmd("wincmd =")
+						end
+					end
+				},
+				{
+					event = "neo_tree_window_after_close",
+					handler = function(args)
+						if args.position == "left" or args.position == "right" then
+							vim.cmd("wincmd =")
+						end
+					end
+				}
+			},
 			default_component_configs = {
 				git_status = {
 					symbols = {
@@ -296,19 +315,19 @@ local plugins = {
 		require('nvim-highlight-colors').setup({})
 	end
 }
-}
+			}
 
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not (vim.uv or vim.loop).fs_stat(lazypath) then
-	vim.fn.system({
-		"git",
-		"clone",
-		"--filter=blob:none",
-		"https://github.com/folke/lazy.nvim.git",
-		"--branch=stable", -- latest stable release
-		lazypath,
-	})
-end
-vim.opt.rtp:prepend(lazypath)
-local opts = {}
-require("lazy").setup(plugins, opts)
+			local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+			if not (vim.uv or vim.loop).fs_stat(lazypath) then
+				vim.fn.system({
+					"git",
+					"clone",
+					"--filter=blob:none",
+					"https://github.com/folke/lazy.nvim.git",
+					"--branch=stable", -- latest stable release
+					lazypath,
+				})
+			end
+			vim.opt.rtp:prepend(lazypath)
+			local opts = {}
+			require("lazy").setup(plugins, opts)

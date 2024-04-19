@@ -28,7 +28,7 @@ vim.cmd [[colorscheme material-deep-ocean]]
 -- vim.cmd [[Alpha]]
 
 -- Attach file explorer
--- vim.cmd [[Neotree show]]
+vim.cmd [[Neotree show]]
 
 
 vim.g.mapleader = ' '
