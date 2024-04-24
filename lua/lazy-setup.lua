@@ -191,9 +191,6 @@ local plugins = {
 -- LSP
 {
 	'williamboman/mason.nvim',
-	config = function()
-		require("mason").setup()
-	end
 },
 {
 	'VonHeikemen/lsp-zero.nvim',
@@ -201,8 +198,7 @@ local plugins = {
 	dependencies = {
 		--- Uncomment the two plugins below if you want to manage the language servers from neovim
 		{'williamboman/mason.nvim'},
-		-- {'williamboman/mason-lspconfig.nvim'},
-
+		'williamboman/mason-lspconfig.nvim',
 		-- LSP Support
 		{'neovim/nvim-lspconfig'},
 		-- Autocompletion
