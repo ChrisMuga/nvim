@@ -16,10 +16,11 @@ vim.opt.shiftwidth=4
 vim.opt.tabstop = 4
 
 -- Startup Colorscheme
-vim.cmd [[colorscheme carbonfox]]
+-- vim.cmd [[colorscheme carbonfox]]
 -- vim.cmd [[colorscheme nightfox]
 -- vim.cmd [[colorscheme material-oceanic]]
 -- vim.cmd [[colorscheme material-deep-ocean]]
+vim.cmd [[colorscheme rose-pine-main]]
 
 -- Attach file explorer
 -- vim.cmd [[Neotree show]] --show on start
