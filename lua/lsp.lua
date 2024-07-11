@@ -8,7 +8,15 @@ end)
 
 -- here you can setup the language servers
 require('lsp-lua')
-require('lspconfig').tsserver.setup({})
+require('mason').setup({})
+require('mason-lspconfig').setup({
+  ensure_installed = {},
+  handlers = {
+    function(server_name)
+      require('lspconfig')[server_name].setup({})
+    end,
+  },
+})
 
 -- Configurations
 require('lsp-autocomplete')
