@@ -305,6 +305,11 @@ local plugins = {
 	dependencies = "nvim-treesitter/nvim-treesitter",
 	config = true, -- or `opts = {}`
 },
+-- Scratch File
+{
+  "LintaoAmons/scratch.nvim",
+  event = "VeryLazy",
+},
 {
 	'brenoprata10/nvim-highlight-colors',
 	config=function ()
