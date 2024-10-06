@@ -14,3 +14,4 @@ require('gitsigns').setup()
 require('nightfox')
 require('mappings')
 require('nvim-treesitter-config')
+require ('nvim-treesitter.install').compilers = { 'zig' }

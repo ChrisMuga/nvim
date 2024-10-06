@@ -151,20 +151,23 @@ local plugins = {
 },
 -- Set Transparent Background
 'xiyaowong/transparent.nvim',
+-- Surround
+{
+    "kylechui/nvim-surround",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+    config = function()
+        require("nvim-surround").setup({
+            -- Configuration here, or leave empty to use defaults
+        })
+    end
+},
 -- Comments
 {
 	"terrortylor/nvim-comment",
 	config = function()
 		require('nvim_comment').setup()
-	end,
-	dependencies={
-		{
-			"kylechui/nvim-surround",
-			config = function()
-				require("nvim-surround").setup({})
-			end
-		}
-	}
+	end
 },
 -- Everforest theme
 {

@@ -3,7 +3,7 @@
 -- Autochange the directory
 -- vim.opt.autochdir = true
 vim.opt.encoding = "UTF-8"
-vim.opt.guifont = "DroidSansMono_Nerd_Font:h11"
+vim.opt.guifont = "Lekton Nerd Font Mono"
 vim.opt.autoindent = true
 vim.opt.showmatch = true
 vim.opt.termguicolors = true
