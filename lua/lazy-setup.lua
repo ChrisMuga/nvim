@@ -89,6 +89,7 @@ local plugins = {
 			{'fh', '<cmd>Telescope help_tags<cr>'},
 			{'ft', '<cmd>Telescope colorscheme<cr>'},
 			{'fg', '<cmd>Telescope git_status<cr>'},
+			{'<leader>sa', 'y<ESC>:Telescope live_grep default_text=<c-r>0<CR>', mode = {"v"}}
 		}
 	},
 	'nvim-pack/nvim-spectre',
