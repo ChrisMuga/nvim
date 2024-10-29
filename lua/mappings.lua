@@ -10,3 +10,5 @@ vim.keymap.set('n', 'sl', '<cmd>set bg=light<cr> <cmd>colorscheme solarized<cr>'
 vim.keymap.set('v', '<leader>sw', '<esc><cmd>lua require("spectre").open_visual()<CR>', {
     desc = "Search current word"
 })
+local default_opts = {noremap = true, silent = true}
+vim.keymap.set('v', '<leader>sa', 'y<ESC>:Telescope live_grep default_text=<c-r>0<CR>', default_opts)
