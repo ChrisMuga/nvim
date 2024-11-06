@@ -284,7 +284,8 @@ local plugins = {
 			require('nvim-highlight-colors').setup({})
 		end
 	},
-		require("plugins.pomo")
+		require("plugins.pomo"),
+		require("plugins.melange")
 }
 
 			local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
