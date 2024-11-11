@@ -20,8 +20,9 @@ vim.opt.tabstop = 4
 -- vim.cmd [[colorscheme nightfox]
 -- vim.cmd [[colorscheme material-oceanic]]
 -- vim.cmd [[colorscheme material-deep-ocean]]
-vim.cmd [[colorscheme rose-pine-main]]
+-- vim.cmd [[colorscheme rose-pine-main]]
 -- vim.cmd [[colorscheme blue]]
+require('set-theme')
 
 -- Attach file explorer
 -- vim.cmd [[Neotree show]] --show on start
