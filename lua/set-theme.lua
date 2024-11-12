@@ -1,5 +1,8 @@
-local is_am = os.date("%p") == "AM"
+local is_am = os.date("%p") == "am"
+
+print(os.date("%p"))
 local theme
+
 if is_am then
 	print("Rise and Shine")
 	theme = "tokyonight-day"
@@ -9,6 +12,7 @@ else
 end
 
 print(theme)
+
 vim.cmd.colorscheme(theme)
 
 
