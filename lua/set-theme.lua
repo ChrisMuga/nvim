@@ -1,17 +1,14 @@
-local is_am = string.lower(os.date("%p")) == "am"
+local tod = tostring(os.date("%p"))
 
-print(os.date("%p"))
+local is_am = string.lower(tod) == "am"
+
 local theme
 
 if is_am then
-	print("Rise and Shine")
 	theme = "tokyonight-day"
 else
-	print("Ye, though I walk through the valley of the shadow of death\nI WILL FEAR NO EVIL")
 	theme = "tokyonight-storm"
 end
-
-print(theme)
 
 vim.cmd.colorscheme(theme)
 
