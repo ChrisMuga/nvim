@@ -1,4 +1,4 @@
-local is_am = os.date("%p") == "am"
+local is_am = string.lower(os.date("%p")) == "am"
 
 print(os.date("%p"))
 local theme
