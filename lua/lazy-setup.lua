@@ -285,7 +285,8 @@ local plugins = {
 		end
 	},
 		require("plugins.pomo"),
-		require("plugins.melange")
+		require("plugins.melange"),
+		require("plugins.todo-comments")
 }
 
 			local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
