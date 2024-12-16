@@ -7,6 +7,6 @@ return {
 		-- refer to the configuration section below
 	  },
 	keys = {
-		{ '<leader>t', '<cmd>TodoTrouble<cr>' },
+		{ '<leader>t', '<cmd>TodoTelescope<cr>' },
 	},
 }
