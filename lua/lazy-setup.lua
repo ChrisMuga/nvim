@@ -230,19 +230,6 @@ local plugins = {
 			require("fidget").setup({})
 		end
 	},
-	-- neogit
-	{
-		"NeogitOrg/neogit",
-		dependencies = {
-			"nvim-lua/plenary.nvim",         -- required
-			"sindrets/diffview.nvim",        -- optional - Diff integration
-			"nvim-telescope/telescope.nvim", -- optional
-		},
-		config = true,
-		keys = {
-			{ '<leader>g', '<cmd>Neogit<cr>' },
-		},
-	},
 	-- which key
 	{
 		"folke/which-key.nvim",
@@ -286,8 +273,9 @@ local plugins = {
 	},
 		require("plugins.pomo"),
 		require("plugins.melange"),
-		require("plugins.todo-comments")
-}
+		require("plugins.todo-comments"),
+		require("plugins.lazy-git")
+	}
 
 			local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 			if not (vim.uv or vim.loop).fs_stat(lazypath) then
