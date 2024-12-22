@@ -97,63 +97,6 @@ local plugins = {
 		},
 	},
 	"nvim-pack/nvim-spectre",
-	{
-		"nvim-neo-tree/neo-tree.nvim",
-		branch = "v3.x",
-		dependencies = {
-			"nvim-lua/plenary.nvim",
-			"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-			"MunifTanjim/nui.nvim",
-			"3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
-		},
-		keys = {
-			{ "<C-t>", "<cmd>Neotree toggle<cr>" },
-			{ "<C-f>", "<cmd>Neotree reveal<cr>" },
-		},
-		lazy = false,
-		use_libuv_file_watcher = true,
-		config = function()
-			require("neo-tree").setup({
-				close_if_last_window = true,
-				event_handlers = {
-					{
-						event = "neo_tree_window_after_open",
-						handler = function(args)
-							if args.position == "left" or args.position == "right" then
-								vim.cmd("wincmd =")
-							end
-						end,
-					},
-					{
-						event = "neo_tree_window_after_close",
-						handler = function(args)
-							if args.position == "left" or args.position == "right" then
-								vim.cmd("wincmd =")
-							end
-						end,
-					},
-				},
-				default_component_configs = {
-					git_status = {
-						symbols = {
-							-- Change type
-							added = "✚", -- NOTE: you can set any of these to an empty string to not show them
-							deleted = "✖",
-							modified = "",
-							renamed = "",
-							-- Status type
-							untracked = "",
-							ignored = "",
-							unstaged = "",
-							staged = "",
-							conflict = "",
-						},
-						align = "right",
-					},
-				},
-			})
-		end,
-	},
 	-- Set Transparent Background
 	"xiyaowong/transparent.nvim",
 	-- Surround
@@ -272,6 +215,7 @@ local plugins = {
 	require("plugins.lazy-git"),
 	require("plugins.trouble"),
 	require("plugins.stylua-nvim"),
+	require("plugins.oil"),
 }
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
