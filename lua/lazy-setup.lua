@@ -163,6 +163,7 @@ local plugins = {
 	require("plugins.stylua-nvim"),
 	require("plugins.oil"),
 	require("plugins.telescope"),
+	require("plugins.flow"),
 }
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
