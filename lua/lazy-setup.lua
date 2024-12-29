@@ -32,10 +32,6 @@ local plugins = {
 			{ "<leader>b", "<cmd>BlamerToggle<cr>" },
 		},
 	},
-	-- Neo Formatter
-	{
-		"sbdchd/neoformat",
-	},
 	"nvim-telescope/telescope-media-files.nvim",
 	-- Icons
 	"nvim-tree/nvim-web-devicons",
@@ -164,6 +160,7 @@ local plugins = {
 	require("plugins.oil"),
 	require("plugins.telescope"),
 	require("plugins.flow"),
+	require("plugins.neoformat"),
 }
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
