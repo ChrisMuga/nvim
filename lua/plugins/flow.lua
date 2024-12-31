@@ -6,15 +6,15 @@ return {
     opts = {
       theme = {
         style = "dark", --  "dark" | "light"
-        contrast = "default", -- "default" | "high"
+        contrast = "high", -- "default" | "high"
         transparent = false, -- true | false
       },
       colors = {
         mode = "default", -- "default" | "dark" | "light"
-        fluo = "pink", -- "pink" | "cyan" | "yellow" | "orange" | "green"
+        fluo = "orange", -- "pink" | "cyan" | "yellow" | "orange" | "green"
       },
       ui = {
-        borders = "inverse", -- "theme" | "inverse" | "fluo" | "none"
+        borders = "none", -- "theme" | "inverse" | "fluo" | "none"
         aggressive_spell = false, -- true | false
       },
     },
