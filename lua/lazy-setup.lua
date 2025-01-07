@@ -151,15 +151,18 @@ local plugins = {
 			require("nvim-highlight-colors").setup({})
 		end,
 	},
-	require("plugins.pomo"),
+	-- Themes
+	require("plugins.flow"),
 	require("plugins.melange"),
+	require("plugins.gruvbox"),
+	--- 
+	require("plugins.pomo"),
 	require("plugins.todo-comments"),
 	require("plugins.lazy-git"),
 	require("plugins.trouble"),
 	require("plugins.stylua-nvim"),
 	require("plugins.oil"),
 	require("plugins.telescope"),
-	require("plugins.flow"),
 	require("plugins.neoformat"),
 }
 

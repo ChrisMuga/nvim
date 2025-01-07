@@ -7,7 +7,7 @@ local theme
 if is_am then
 	theme = "tokyonight-day"
 else
-	theme = "catppuccin-macchiato"
+	theme = "gruvbox"
 end
 
 vim.cmd.colorscheme(theme)
