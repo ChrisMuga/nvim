@@ -9,7 +9,7 @@ if is_am then
 	mode  = "light"
 	theme = "gruvbox"
 else
-	mode  = "dark"
+	mode  = "light"
 	theme = "gruvbox"
 end
 

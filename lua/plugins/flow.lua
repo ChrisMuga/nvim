@@ -11,7 +11,7 @@ return {
       },
       colors = {
         mode = "default", -- "default" | "dark" | "light"
-        fluo = "orange", -- "pink" | "cyan" | "yellow" | "orange" | "green"
+        fluo = "pink", -- "pink" | "cyan" | "yellow" | "orange" | "green"
       },
       ui = {
         borders = "none", -- "theme" | "inverse" | "fluo" | "none"
