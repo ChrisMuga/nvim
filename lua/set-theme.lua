@@ -7,10 +7,10 @@ local mode
 
 if is_am then
 	mode  = "light"
-	theme = "gruvbox"
+	theme = "catppuccin-latte"
 else
 	mode  = "dark"
-	theme = "gruvbox"
+	theme = "catppuccin-macchiato"
 end
 
 vim.o.background = mode
