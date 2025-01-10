@@ -39,8 +39,6 @@ local plugins = {
 	-- Fuzzy Finder (2)
 	"nvim-lua/plenary.nvim",
 	"nvim-pack/nvim-spectre",
-	-- Set Transparent Background
-	"xiyaowong/transparent.nvim",
 	-- Surround
 	{
 		"kylechui/nvim-surround",
@@ -164,6 +162,7 @@ local plugins = {
 	require("plugins.oil"),
 	require("plugins.telescope"),
 	require("plugins.neoformat"),
+	require("plugins.transparent-toggle"),
 }
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"

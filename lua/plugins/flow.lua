@@ -7,7 +7,7 @@ return {
       theme = {
         style = "dark", --  "dark" | "light"
         contrast = "high", -- "default" | "high"
-        transparent = false, -- true | false
+        transparent = true, -- true | false
       },
       colors = {
         mode = "default", -- "default" | "dark" | "light"
@@ -18,4 +18,7 @@ return {
         aggressive_spell = false, -- true | false
       },
     },
+	config = function(_, opts)
+      require("flow").setup(opts)
+    end,
   }
