@@ -1,7 +1,8 @@
 
 -- Set Transparent Background
 return {"xiyaowong/transparent.nvim",
-	config=function ()
-		vim.cmd(":TransparentEnable")
-	end
+	keys = {
+		{ 'td', '<cmd>TransparentDisable<cr>', desc="Disable Transparency"},
+		{ 'te', '<cmd>TransparentEnable<cr>', desc="Enable Transparency" },
+	},
 }
