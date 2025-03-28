@@ -10,7 +10,7 @@ if is_am then
 	theme = "catppuccin-latte"
 else
 	mode  = "dark"
-	theme = "catppuccin-macchiato"
+	theme = "carbonfox"
 end
 
 vim.o.background = mode
