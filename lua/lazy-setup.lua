@@ -162,6 +162,7 @@ local plugins = {
 	require("plugins.oil"),
 	require("plugins.telescope"),
 	require("plugins.neoformat"),
+	require("plugins.conform"),
 	require("plugins.transparent-toggle"),
 }
 
