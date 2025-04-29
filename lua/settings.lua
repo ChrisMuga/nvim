@@ -10,23 +10,24 @@ vim.opt.termguicolors = true
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.wo.number = true
+vim.opt.relativenumber = true
 
 -- Tab width options
-vim.opt.shiftwidth=4
+vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 
-require('set-theme')
+require("set-theme")
 
 -- Attach file explorer
 require("oil").setup()
 
 -- Leader mappings
-vim.g.mapleader = ' '
+vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 -- Keymaps
-vim.keymap.set("n", "nf", '<cmd>Neoformat<cr>')
+vim.keymap.set("n", "nf", "<cmd>Neoformat<cr>")
 
-require('telescope').load_extension('media_files')
+require("telescope").load_extension("media_files")
 
-require('lsp')
+require("lsp")
