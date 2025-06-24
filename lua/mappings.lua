@@ -10,3 +10,6 @@ vim.keymap.set('n', 'sl', '<cmd>set bg=light<cr> <cmd>colorscheme solarized<cr>'
 vim.keymap.set('v', '<leader>sw', '<esc><cmd>lua require("spectre").open_visual()<CR>', {
     desc = "Search current word"
 })
+
+-- Go to definition
+vim.keymap.set('n', 'gd', '<C-]>', { desc = 'Go to definition' })
