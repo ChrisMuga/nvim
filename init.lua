@@ -14,8 +14,5 @@ require('gitsigns').setup()
 require('nightfox')
 require('mappings')
 require('nvim-treesitter-config')
-require ('nvim-treesitter.install').compilers = { 'zig' }
-
--- Enable gopls - go language server
--- TODO: Harmonize with other lsps
-vim.lsp.enable('gopls')
+require('nvim-treesitter.install').compilers = { 'zig' }
+require('lsp')
