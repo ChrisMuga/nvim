@@ -29,5 +29,3 @@ vim.g.maplocalleader = "\\"
 vim.keymap.set("n", "nf", "<cmd>Neoformat<cr>")
 
 require("telescope").load_extension("media_files")
-
-require("lsp")
