@@ -86,6 +86,7 @@ local plugins = {
 			require("mason").setup({})
 		end
 	},
+	require("plugins.mason-lspconfig"),
 	{
 		"j-hui/fidget.nvim",
 		opts = {
