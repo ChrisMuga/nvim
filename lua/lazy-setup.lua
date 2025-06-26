@@ -84,7 +84,7 @@ local plugins = {
 		"williamboman/mason.nvim",
 		config = function()
 			require("mason").setup({})
-		end
+		end,
 	},
 	require("plugins.mason-lspconfig"),
 	{
@@ -126,22 +126,11 @@ local plugins = {
 		dependencies = "nvim-treesitter/nvim-treesitter",
 		config = true, -- or `opts = {}`
 	},
-	-- Scratch File
-	{
-		"LintaoAmons/scratch.nvim",
-		event = "VeryLazy",
-	},
-	{
-		"brenoprata10/nvim-highlight-colors",
-		config = function()
-			require("nvim-highlight-colors").setup({})
-		end,
-	},
 	-- Themes
 	require("plugins.flow"),
 	require("plugins.melange"),
 	require("plugins.gruvbox"),
-	---
+	--- Misc
 	require("plugins.pomo"),
 	require("plugins.todo-comments"),
 	require("plugins.lazy-git"),
