@@ -130,6 +130,8 @@ local plugins = {
 	require("plugins.flow"),
 	require("plugins.melange"),
 	require("plugins.gruvbox"),
+	-- LSP
+	require("plugins.lsp"),
 	--- Misc
 	require("plugins.pomo"),
 	require("plugins.todo-comments"),
