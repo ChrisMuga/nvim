@@ -143,6 +143,7 @@ local plugins = {
 	require("plugins.neoformat"),
 	require("plugins.conform"),
 	require("plugins.transparent-toggle"),
+	require("plugins.noice"),
 }
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
