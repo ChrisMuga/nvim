@@ -6,14 +6,12 @@ local theme
 local mode
 
 if is_am then
-	mode  = "light"
+	mode = "light"
 	theme = "catppuccin-latte"
 else
-	mode  = "dark"
-	theme = "carbonfox"
+	mode = "dark"
+	theme = "material-deep-ocean"
 end
 
 vim.o.background = mode
 vim.cmd.colorscheme(theme)
-
-
