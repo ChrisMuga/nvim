@@ -118,7 +118,7 @@ local plugins = {
 		version = "*",
 		config = true,
 		keys = {
-			{ "tt", "<cmd>:ToggleTerm direction=float name=Terminal<cr>" },
+			{ "<C-x>", "<cmd>:ToggleTerm direction=float name=Terminal<cr>" },
 		},
 	},
 	{
