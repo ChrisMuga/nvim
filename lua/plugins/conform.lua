@@ -11,6 +11,8 @@ return {
 				-- Conform will run the first available formatter
 				javascript = { "prettierd", "prettier", stop_after_first = true },
 				eruby = { "erb_format" },
+				c = { "clang-format" },
+				cpp = { "clang-format" },
 			},
 		})
 		vim.api.nvim_create_autocmd("BufWritePre", {
