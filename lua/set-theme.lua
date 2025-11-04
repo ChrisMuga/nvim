@@ -2,8 +2,8 @@ local tod = tostring(os.date("%p"))
 
 local is_am = string.lower(tod) == "am"
 
-local theme = "citruszest"
--- local mode
+local theme
+local mode
 
 if is_am then
 	mode = "light"
