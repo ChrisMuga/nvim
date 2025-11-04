@@ -7,10 +7,10 @@ local mode
 
 if is_am then
 	mode = "light"
-	theme = "catppuccin-latte"
+	theme = "rose-pine-dawn"
 else
 	mode = "dark"
-	theme = "material-deep-ocean"
+	theme = "rose-pine-main"
 end
 
 vim.o.background = mode
