@@ -11,5 +11,19 @@ vim.keymap.set('v', '<leader>sw', '<esc><cmd>lua require("spectre").open_visual(
     desc = "Search current word"
 })
 
+-- Tab manipulation and navigation
+-- Create new tab
+vim.keymap.set('n', '<leader>tn', '<esc><cmd>tabnew<CR>', {
+    desc = "Create new tab"
+})
+-- Navigate to the next tab
+vim.keymap.set('n', '<leader>t<right>', '<esc><cmd>tabnext<CR>', {
+    desc = "Navigate to the next tab"
+})
+-- Navigate to the previous tab
+vim.keymap.set('n', '<leader>t<left>', '<esc><cmd>tabprevious<CR>', {
+    desc = "Navigate to the previous tab"
+})
+
 -- Go to definition
 vim.keymap.set('n', 'gd', '<C-]>', { desc = 'Go to definition' })
