@@ -7,6 +7,6 @@ return {
 	dependencies = { { "echasnovski/mini.icons", opts = {} } },
 	-- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if prefer nvim-web-devicons
     keys = {
-        { "<leader>f", "<cmd>Oil<cr>", desc = "Oil" }
+        { "<leader>e", "<cmd>Oil<cr>", desc = "Oil: Explore" }
     }
 }

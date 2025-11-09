@@ -41,14 +41,13 @@ return {
 	end,
 	keys = {
 		{ "<leader><leader>", "<cmd>Telescope find_files<cr>" }, -- Find file
-		{ "ff", "<cmd>Telescope find_files<cr>" }, -- Find file
-		{ "fs", "<cmd>Telescope live_grep<cr>" }, -- Find String
-		{ "gs", "<cmd>Telescope grep_string<cr>" }, -- Grep String Under Cursor
-		{ "fb", "<cmd>Telescope buffers<cr>" }, -- Find Open Files (in Buffer)
-		{ "fc", "<cmd>Telescope oldfiles<cr>" }, -- Find Closed Files (in Buffer)
-		{ "fh", "<cmd>Telescope help_tags<cr>" },
-		{ "ft", "<cmd>Telescope colorscheme<cr>" },
-		{ "fg", "<cmd>Telescope git_status<cr>" },
-		{ "`", "y<ESC>:Telescope live_grep default_text=<c-r>0<CR>", mode = { "v" } },
+		{ "<leader>fs", "<cmd>Telescope live_grep<cr>" }, -- Find String
+		{ "<leader>gs", "<cmd>Telescope grep_string<cr>" }, -- Grep String Under Cursor
+		{ "<leader>fb", "<cmd>Telescope buffers<cr>" }, -- Find Open Files (in Buffer)
+		{ "<leader>fc", "<cmd>Telescope oldfiles<cr>" }, -- Find Closed Files (in Buffer)
+		{ "<leader>fh", "<cmd>Telescope help_tags<cr>" },
+		{ "<leader>ft", "<cmd>Telescope colorscheme<cr>" },
+		{ "<leader>fg", "<cmd>Telescope git_status<cr>" },
+		{ "<leader>`", "y<ESC>:Telescope live_grep default_text=<c-r>0<CR>", mode = { "v" } },
 	},
 }
