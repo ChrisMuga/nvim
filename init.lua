@@ -13,5 +13,4 @@ require("icons")
 require("gitsigns").setup()
 require("nightfox")
 require("mappings")
-require("nvim-treesitter.install").compilers = { "zig" }
 require("lsp")

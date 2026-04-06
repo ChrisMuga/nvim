@@ -1,10 +1,6 @@
 vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
 vim.g.maplocalleader = " " -- Same for `maplocalleader`
 local plugins = {
-	-- Treesitter
-	{
-		"nvim-treesitter/nvim-treesitter",
-	},
 	-- Themes
 	-- https://github.com/EdenEast/nightfox.nvim
 	"EdenEast/nightfox.nvim",
@@ -123,7 +119,6 @@ local plugins = {
 	},
 	{
 		"lukas-reineke/headlines.nvim",
-		dependencies = "nvim-treesitter/nvim-treesitter",
 		config = true, -- or `opts = {}`
 	},
 	-- Themes
