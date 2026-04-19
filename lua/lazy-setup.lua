@@ -127,6 +127,7 @@ local plugins = {
 	require("plugins.melange"),
 	require("plugins.gruvbox"),
 	require("plugins.citruszest"),
+	require("plugins.ayu"),
 	-- LSP
 	require("plugins.lsp"),
 	--- Misc
