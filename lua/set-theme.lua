@@ -3,9 +3,11 @@ local tod = tostring(os.date("%p"))
 local is_am = string.lower(tod) == "am"
 
 -- local theme = "material-deep-ocean"
-local theme = "rose-pine-main"
+-- local theme = "rose-pine-main"
 -- local theme = "nordfox"
 -- local theme = "carbonfox"
+-- local theme = "ayu-light"
+local theme = "ayu-dark"
 local mode
 
 -- if is_am then
