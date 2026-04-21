@@ -128,6 +128,7 @@ local plugins = {
 	require("plugins.gruvbox"),
 	require("plugins.citruszest"),
 	require("plugins.ayu"),
+	require("plugins.github-theme"),
 	-- LSP
 	require("plugins.lsp"),
 	--- Misc
