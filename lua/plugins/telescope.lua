@@ -43,8 +43,8 @@ return {
 		{ "<leader><leader>", "<cmd>Telescope find_files<cr>", desc = "Find File" }, -- Find file
 		{ "<leader>/", "<cmd>Telescope live_grep<cr>", desc = "Find String" }, -- Find String
 		{ "<leader>gs", "<cmd>Telescope grep_string<cr>" }, -- Grep String Under Cursor
-		{ "<leader>fb", "<cmd>Telescope buffers<cr>" }, -- Find Open Files (in Buffer)
-		{ "<leader>fc", "<cmd>Telescope oldfiles<cr>" }, -- Find Closed Files (in Buffer)
+		{ "<leader>b", "<cmd>Telescope buffers<cr>" }, -- Find Open Files (in Buffer)
+		{ "<leader>c", "<cmd>Telescope oldfiles<cr>" }, -- Find Closed Files (in Buffer)
 		{ "<leader>fh", "<cmd>Telescope help_tags<cr>" },
 		{ "<leader>ft", "<cmd>Telescope colorscheme<cr>", desc = "Find Theme" },
 		{ "<leader>fg", "<cmd>Telescope git_status<cr>" },
