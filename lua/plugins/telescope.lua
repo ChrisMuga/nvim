@@ -48,6 +48,7 @@ return {
 		{ "<leader>fh", "<cmd>Telescope help_tags<cr>" },
 		{ "<leader>ft", "<cmd>Telescope colorscheme<cr>", desc = "Find Theme" },
 		{ "<leader>fg", "<cmd>Telescope git_status<cr>" },
+		{ "<leader>t", "<cmd>Telescope telescope-tabs list_tabs<cr>" },
 		{ "<leader>`", "y<ESC>:Telescope live_grep default_text=<c-r>0<CR>", mode = { "v" } },
 	},
 }

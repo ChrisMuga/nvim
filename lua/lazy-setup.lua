@@ -139,6 +139,7 @@ local plugins = {
 	require("plugins.stylua-nvim"),
 	require("plugins.oil"),
 	require("plugins.telescope"),
+	require("plugins.telescope-tabs"),
 	require("plugins.neoformat"),
 	require("plugins.conform"),
 	require("plugins.transparent-toggle"),
