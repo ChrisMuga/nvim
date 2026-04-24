@@ -25,7 +25,7 @@ local plugins = {
 	{
 		"APZelos/blamer.nvim",
 		keys = {
-			{ "<leader>b", "<cmd>BlamerToggle<cr>" },
+			{ "<leader>gb", "<cmd>BlamerToggle<cr>" },
 		},
 	},
 	"nvim-telescope/telescope-media-files.nvim",
