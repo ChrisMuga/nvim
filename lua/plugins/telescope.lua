@@ -50,5 +50,11 @@ return {
 		{ "<leader>fg", "<cmd>Telescope git_status<cr>" },
 		{ "<leader>t", "<cmd>Telescope telescope-tabs list_tabs<cr>" },
 		{ "<leader>`", "y<ESC>:Telescope live_grep default_text=<c-r>0<CR>", mode = { "v" } },
+		{
+			"<leader>r",
+			"y<ESC>:Telescope lsp_references<CR>",
+			mode = { "v", "n" },
+			desc = "List references under the cursor",
+		},
 	},
 }
