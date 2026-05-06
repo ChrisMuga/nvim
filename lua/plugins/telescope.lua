@@ -40,11 +40,11 @@ return {
 		})
 	end,
 	keys = {
-		{ "<leader><leader>", "<cmd>Telescope find_files<cr>", desc = "Find File" }, -- Find file
-		{ "<leader>/", "<cmd>Telescope live_grep<cr>", desc = "Find String" }, -- Find String
-		{ "<leader>gs", "<cmd>Telescope grep_string<cr>" }, -- Grep String Under Cursor
-		{ "<leader>b", "<cmd>Telescope buffers<cr>" }, -- Find Open Files (in Buffer)
-		{ "<leader>c", "<cmd>Telescope oldfiles<cr>" }, -- Find Closed Files (in Buffer)
+		{ "<leader><leader>", "<cmd>Telescope find_files<cr>", desc = "Find file" },
+		{ "<leader>/", "<cmd>Telescope live_grep<cr>", desc = "Find string" },
+		{ "<leader>gs", "<cmd>Telescope grep_string<cr>", desc = "Grep string Under Cursor" },
+		{ "<leader>b", "<cmd>Telescope buffers<cr>", desc = "Find (open) files in the buffer" },
+		{ "<leader>c", "<cmd>Telescope oldfiles<cr>", desc = "Find old files - previously opened files" },
 		{ "<leader>fh", "<cmd>Telescope help_tags<cr>" },
 		{ "<leader>ft", "<cmd>Telescope colorscheme<cr>", desc = "Find Theme" },
 		{ "<leader>fg", "<cmd>Telescope git_status<cr>" },
@@ -55,6 +55,18 @@ return {
 			"y<ESC>:Telescope lsp_references<CR>",
 			mode = { "v", "n" },
 			desc = "List references under the cursor",
+		},
+		{
+			"<leader>i",
+			"y<ESC>:Telescope lsp_incoming_calls<CR>",
+			mode = { "v", "n" },
+			desc = "List incoming calls to the symbol (under the cursor)",
+		},
+		{
+			"<leader>o",
+			"y<ESC>:Telescope lsp_outgoing_calls<CR>",
+			mode = { "v", "n" },
+			desc = "List outgoing calls from the symbol (under the cursor)",
 		},
 	},
 }
