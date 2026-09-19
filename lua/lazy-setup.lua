@@ -129,6 +129,7 @@ local plugins = {
 	require("plugins.citruszest"),
 	require("plugins.ayu"),
 	require("plugins.github-theme"),
+	require("plugins.night-owl"),
 	-- LSP
 	require("plugins.lsp"),
 	--- Misc

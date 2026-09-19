@@ -20,3 +20,10 @@ local mode
 
 vim.o.background = mode
 vim.cmd.colorscheme(theme)
+vim.cmd.set('background=dark')
+vim.cmd.colorscheme('gruvbox')
+vim.cmd.colorscheme('ayu-dark')
+vim.cmd.set('background=dark')
+vim.cmd.colorscheme('gruvbox')
+vim.cmd.set('background=dark')
+vim.cmd.colorscheme('nightfox')
